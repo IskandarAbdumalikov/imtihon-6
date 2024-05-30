@@ -36,7 +36,23 @@
   gap: 30px;
   &__categories {
     overflow: auto;
-    scrollbar-width: none;
+  }
+   
+  &__categories::-webkit-scrollbar-thumb {
+    height: 8px;
+  }
+  &__categories::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
+  &__categories::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  &__categories::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+  }
+  &__categories::-webkit-scrollbar-thumb:hover {
+    background: #f2f2f2;
   }
 }
 

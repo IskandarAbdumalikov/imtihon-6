@@ -238,6 +238,18 @@ main {
   .featured__categories__cards::-webkit-scrollbar-thumb {
     height: 8px;
   }
+  .featured__categories__cards::-webkit-scrollbar {
+    height: 10px;
+  }
+  .featured__categories__cards::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .featured__categories__cards::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+  }
+  .featured__categories__cards::-webkit-scrollbar-thumb:hover {
+    background: #f2f2f2;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -251,8 +263,11 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-    padding-top: 50px;
   }
+}
+
+.featured__categories__items{
+  padding-top: 50px;
 }
 
 @media (max-width: 680px) {
@@ -270,12 +285,29 @@ main {
   }
 }
 
-@media (max-width: 1340px){
-  .about__cards{
+@media (max-width: 1340px) {
+  .about__cards {
     overflow: auto;
-    .about__card{
+    padding-bottom: 20px;
+    .about__card {
       width: 300px;
     }
+  }
+   
+  .about__cards::-webkit-scrollbar-thumb {
+    height: 8px;
+  }
+  .about__cards::-webkit-scrollbar {
+    height: 10px;
+  }
+  .about__cards::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .about__cards::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+  }
+  .about__cards::-webkit-scrollbar-thumb:hover {
+    background: #f2f2f2;
   }
 }
 
@@ -292,13 +324,13 @@ main {
 }
 
 @media (max-width: 700px) {
-  .featured__categories__header{
+  .featured__categories__header {
     flex-direction: column;
     gap: 50px;
-    ul{
+    ul {
       width: 100%;
       overflow: auto;
-      li{
+      li {
         text-wrap: nowrap;
       }
     }
